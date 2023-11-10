@@ -1,4 +1,3 @@
-import asyncio
 import os
 from interactions import Client, Intents, listen, slash_command, SlashContext
 from discord.ext import tasks
@@ -29,7 +28,6 @@ async def maintain(ctx: SlashContext):
     for thread in threads:
         # 'thread' is a TextChannel object representing the thread
         message = await thread.send("Maintenance Message! 👋")
-        await asyncio.sleep(1)
         await message.delete()
 
 
@@ -64,7 +62,6 @@ async def auto_maintenance(ctx: SlashContext):
     for thread in threads:
         # 'thread' is a TextChannel object representing the thread
         message = await thread.send("Maintenance Message! 👋")
-        await asyncio.sleep(5)
         await message.delete()
 
 
