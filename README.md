@@ -17,7 +17,7 @@ To get started with the Discord bot, follow these steps:
 
 1. Clone the repository to your local machine.
 2. Install the required dependencies using `pip install -r requirements.txt`.
-3. Replace `"YOUR_BOT_TOKEN"` in env with your actual Discord bot token.
+3. Replace `"BOT_TOKEN"` in env with your actual Discord bot token.
 4. Run the bot using `python thready.py`.
 
 ## 🪪 License
