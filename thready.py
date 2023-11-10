@@ -1,7 +1,14 @@
 import asyncio
+import os
 from interactions import Client, Intents, listen, slash_command, SlashContext
 from discord.ext import tasks
-from datetime import datetime, timedelta
+from dotenv import load_dotenv
+
+# Load environment variables from the .env file
+load_dotenv()
+
+# Get the bot token from the environment variable
+bot_token = os.getenv("BOT_TOKEN")
 
 bot = Client(intents=Intents.DEFAULT)
 
@@ -68,4 +75,4 @@ async def status(ctx: SlashContext):
     else:
         await ctx.send("Auto maintenance is not currently active. ❌")
 
-bot.start("TOKEN")
+bot.start(bot_token)
