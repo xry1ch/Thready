@@ -2,7 +2,7 @@
 
 ## 📜 Overview
 
-Welcome to Thready! This project is a Discord bot built using Python and the `interactions` library. The bot comes with several commands and features designed to enhance your Discord threads.
+Discord bot built using Python and the `interactions` library. The bot comes with several commands and features designed to enhance your Discord threads.
 
 ## 🎚 Commands
 
